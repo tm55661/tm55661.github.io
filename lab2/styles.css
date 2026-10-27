@@ -1,3 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #f3fff3;
+    margin: 0;
+    padding: 32px 16px;
+    font-family: Arial, sans-serif;
+    background: #f0f3f7;
+    color: #202b3b;
+}
+
+main {
+    max-width: 760px;
+    margin: auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input,
+button {
+    font: inherit;
+    padding: 10px;
+    border: 1px solid #8c98a8;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    background: #2357ab;
+    color: white;
+}
+
+button:hover {
+    background: #18417f;
+}
+
+:focus-visible {
+    outline: 3px solid #e49c19;
+    outline-offset: 3px;
+}
+
+.hint,
+time,
+#empty-message {
+    color: #526073;
+    font-size: .9rem;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #d7dde5;
+}
+
+.task-content {
+    flex: 1;
+    min-width: 0;
+    padding: 8px;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+time {
+    display: block;
+    margin-top: 6px;
+}
+
+.delete {
+    background: #a22c32;
+    flex-shrink: 0;
+}
+
+.delete:hover {
+    background: #7c1e24;
+}
+
+.editor {
+    flex: 1;
+    min-width: 0;
+}
+
+.editor input {
+    margin-bottom: 6px;
+}
+
+.edit-error,
+#message {
+    color: #a1242c;
+}
+
+mark {
+    background: #ffe17a;
+    color: #202b3b;
+}
+
+#task-form {
+    border-top: 2px solid #d7dde5;
+    padding-top: 10px;
+}
+
+#task-form button {
+    margin-top: 14px;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 18px;
+    }
+
+    .task {
+        gap: 4px;
+    }
 }
