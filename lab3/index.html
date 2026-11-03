@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - AI LAB C</title>
+    <title>Michal Trzaska (55661) - AI LAB C</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/4.0.0/leaflet-providers.min.js" defer></script>
+    <script src="https://unpkg.com/leaflet-image@0.4.0/leaflet-image.js" defer></script>
     <script src="scripts.js" defer></script>
 </head>
 <body>
+
+<div id="mapPuzzleLayout">
+    <div id="map"></div>
+    <section id="puzzleSection" hidden>
+        <canvas id="puzzleCanvas" width="800" height="600" aria-label="Map puzzle. Drag tiles to arrange the image."></canvas>
+        <h2>Map puzzle</h2>
+        <p id="puzzleStatus" role="status" aria-live="polite"></p>
+    </section>
+</div>
+<button id="getLocation" onClick="getLocation()">Get Location</button>
+<button id="saveButton">Save Raster Map</button>
+<br>
+
+<canvas id="rasterMap" width="600" height="300"></canvas>
+
+<div id = "positionInfo">
+    <strong>Latitude:</strong> <span id = "latitude"></span><br>
+    <strong>Longitude:</strong> <span id = "longitude"></span><br>
+</div>
 
 </body>
 </html>

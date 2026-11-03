@@ -1,3 +1,56 @@
 body {
-  background-color: #e6f1fc;
+  background-color: lavender;
+}
+
+#mapPuzzleLayout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#map {
+  width:800px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+#rasterMap {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+}
+div.item {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+div.draggable {
+  background-color: #7f7fe9;
+}
+
+div.non-draggable {
+  background-color: #ee15af;
+}
+
+div.drag-target {
+  width: 800px;
+  height: 600px;
+  border: 2px dashed #7f7fe9;
+  margin-bottom: 25px;
+}
+
+#puzzleCanvas {
+  display: block;
+  width: min(800px, 100%);
+  height: auto;
+  border: 1px solid black;
+  cursor: grab;
+  touch-action: none;
+}
+
+#puzzleCanvas:active {
+  cursor: grabbing;
 }
