@@ -1,3 +1,78 @@
+
 body {
-  background-color: #e6f1fc;
+  background-color: powderblue;
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+strong {
+  font-size: 42px;
+  color: black;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+button {
+  background-color: powderblue;
+  color: black;
+  cursor: pointer;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+}
+
+#currentWeather {
+  background: #a3c9e8;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-size: 22px;
+}
+
+#currentWeather h2 {
+  font-size: 38px;
+}
+
+#forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.forecast-card {
+  background: #a3c9e8;
+  padding: 15px;
+  border-radius: 10px;
+  width: 210px;
+  font-size: 19px;
+}
+
+.forecast-card h3 {
+  font-size: 27px;
+}
+
+.forecast-card img {
+  width: 90px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
 }
