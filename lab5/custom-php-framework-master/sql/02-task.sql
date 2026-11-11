@@ -1,0 +1,5 @@
+CREATE TABLE task(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL ,
+    description TEXT NOT NULL
+);
